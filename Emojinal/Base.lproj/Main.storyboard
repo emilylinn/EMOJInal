@@ -29,15 +29,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <state key="normal" title="👚"/>
                                 <connections>
-                                    <action selector="showMessageShirtWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HpX-vi-QBI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-c2-MLr">
-                                <rect key="frame" x="250" y="197" width="84" height="106"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="78"/>
-                                <state key="normal" title="💆‍♀️"/>
-                                <connections>
-                                    <action selector="showMessageMassageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yf7-9b-NFy"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJ1-u5-Irv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzP-Mh-Oh7">
@@ -46,6 +38,14 @@
                                 <color key="textColor" red="0.3486345090705496" green="0.3486345090705496" blue="0.3486345090705496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-c2-MLr">
+                                <rect key="frame" x="250" y="197" width="84" height="106"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="78"/>
+                                <state key="normal" title="💆‍♀️"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgt-Qc-YS6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93902747382238549" blue="0.96548763473961663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

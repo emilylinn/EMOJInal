@@ -25,21 +25,26 @@ class ViewController: UIViewController {
 //    @IBAction func faceTapped(_ sender: UIButton) {
 //    }
     
-    @IBAction func showMessageShirt(sender: UIButton) {
-        let alertShirt = UIAlertController(title:"Treat Yo Self", message: "Go ahead and buy something for yourself!", preferredStyle: UIAlertController.Style.alert)
-        alertShirt.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertShirt, animated: true, completion: nil)
+    @IBAction func showMessage(sender: UIButton) {
+        
+        let selectedEmotion = sender.titleLabel?.text
+        let alertController = UIAlertController(title: "Treat Yo Self.", message: "Buy something for yourself.", preferredStyle: UIAlertController.Style.alert)
+    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+        
+//        let alertShirt = UIAlertController(title:"Treat Yo Self", message: "Go ahead and buy something for yourself!", preferredStyle: UIAlertController.Style.alert)
+//        alertShirt.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//        present(alertShirt, animated: true, completion: nil)
 
         
-//        func showMessage(sender: UIButton) {
-//        let alertMassage = UIAlertController(title:"Treat Yo Self", message: "Get a massage.", preferredStyle: UIAlertController.Style.alert)
-//        alertMassage.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-//
+//    @IBAction func showMessageMassage(sender: UIButton) {
+//        let alertMassage = UIAlertController(title: "Treat Yo Self", message: "Get a massage - you deserve it.", preferredStyle: UIAlertController.Style.alert)
+//      alertMassage.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 //        present(alertMassage, animated: true, completion: nil)
-    }
-    @IBAction func showMessageMassage(sender: UIButton) {
-        let alertMassage = UIAlertController(title: "Treat Yo Self", message: "Get a massage.", preferredStyle: UIAlertController.Style.alert)
-      alertMassage.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertMassage, animated: true, completion: nil)
+//
+//}
+//    let emojis = ["👚": "Go ahead and buy something for yourself.", "💆‍♀️": "Get a massage - you deserve it."]
+//}
 }
 }
