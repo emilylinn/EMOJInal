@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    let emojis = ["👚": "Go ahead and buy something for yourself.", "💆‍♀️": "Get a massage - you deserve it!"]
+    let emojis = ["👚": "Go ahead and buy something for yourself.", "💆‍♀️": "Get a massage - you deserve it!", "🕒": "Set your alarm.", "👄": "Speak up."]
     let customMessages = [
         "Go ahead and buy something for yourself." : ["Put on your favorite shirt!", "Go try on your favorite outfits!", "Go ahead and buy something for yourself."],
         "Get a massage - you deserve it!" : ["Do some yoga.", "Tell yourself that you are amazing - because you ARE!", "Get a massage - you deserve it!"],
