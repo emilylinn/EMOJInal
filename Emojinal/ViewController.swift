@@ -17,18 +17,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    
-//    @IBAction func shirtTapped(_ sender: UIButton) {
-//    }
-//
-//    @IBAction func faceTapped(_ sender: UIButton) {
-//    }
+    let emojis = ["👚": "Go ahead and buy something for yourself.", "💆‍♀️": "Get a massage - you deserve it!"]
+    let customMessages = [
+        "Go ahead and buy something for yourself." : ["Put on your favorite shirt!", "Go try on your favorite outfits!", "Go ahead and buy something for yourself."],
+        "Get a massage - you deserve it!" : ["Do some yoga.", "Tell yourself that you are amazing - because you ARE!", "Get a massage - you deserve it!"]
+    ]
     
     @IBAction func showMessage(sender: UIButton) {
         
+        let number = Int.random(in: 0 ..< 3)
         let selectedEmotion = sender.titleLabel?.text
-        let alertController = UIAlertController(title: "Treat Yo Self.", message: "Buy something for yourself.", preferredStyle: UIAlertController.Style.alert)
+        
+        let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[number]
+        
+        
+        let alertController = UIAlertController(title: "Treat Yo Self", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
     alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         present(alertController, animated: true, completion: nil)
@@ -43,8 +46,6 @@ class ViewController: UIViewController {
 //      alertMassage.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 //        present(alertMassage, animated: true, completion: nil)
 //
-//}
-//    let emojis = ["👚": "Go ahead and buy something for yourself.", "💆‍♀️": "Get a massage - you deserve it."]
 //}
 }
 }
