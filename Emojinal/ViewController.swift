@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[number]
         
         
-        let alertController = UIAlertController(title: "Treat Yo Self", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Survive School", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         present(alertController, animated: true, completion: nil)
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[number]
         
         
-        let alertController = UIAlertController(title: "Treat Yo Self", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Survive School", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         present(alertController, animated: true, completion: nil)
